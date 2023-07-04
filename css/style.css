@@ -5,11 +5,14 @@
 
 h2{
     text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
 
 .productos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card-body{
