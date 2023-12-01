@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <title>CARPIshop - carrito</title>
+
+    <title>CARPIshop - carrito</title>
 </head>
 
 <body>
@@ -35,33 +36,13 @@
         <main>
             <h2 class="titulo-principal">carrito</h2>
             <div class="contenedor-carrito">
-                <p class="carrito vacio">Tu carrito esta vacio <i class="bi bi-emoji-frown-fill"></i></p>
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio <i class="bi bi-emoji-frown-fill"></i></p>
 
-                <div class="carrito-productos">
-                    <img src="" alt="" />
-                    <div class="carrito-producto-titulo">
-                        <small>titulo</small>
-                        <h3>Abrigo 01</h3>
-                    </div>
-                    <div class="carrito-producto-cantidad">
-                        <small>cantidad</small>
-                        <p>1</p>
-                    </div>
-
-                    <div class="carrito-producto-precio">
-                        <small>precio</small>
-                        <p>$20000</p>
-                    </div>
-
-                    <div class="carrito-producto-subtotal">
-                        <small>subtotal</small>
-                        <p>$20000</p>
-                    </div>
-                    <button class="carrito-producto-eliminar">
-                        <i class="bi bi-trash3"></i>
-                    </button>
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- se va a rellenar con js -->
                 </div>
-                <div class="carrito-acciones">
+                
+                <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
                         <div class="carrito-acciones-vaciar">Vaciar carrito</div>
                     </div>
@@ -70,16 +51,21 @@
                             <p>Total:</p>
                             <p id="total">$3000</p>
                         </div>    
-                            <button class="carrito-acciones-comprar">Comprar ahora</button>
-                        
+                        <button class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
                 </div>
+            
+            <p id="carrito-comprado" class="carrito-comprado  disabled">Muchas gracias por tu compra! <i class="bi bi-emoji-smile-fill"></i></p>
 
-                <p class="carrito-comprado">Muchas gracias por tu compra! <i class="bi bi-emoji-smile-fill"></i></p>
+            <div class="metodo-de-pago">
+                 <div></div>
             </div>
+
+            </div>
+        
         </main>
     </div>
     <script src="./carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>
