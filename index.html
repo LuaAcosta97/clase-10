@@ -6,56 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <title>CarpiShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <title>YOURStyle - Home</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <aside>
-            <header>
-                <h1 class="logo">CARPIshop</h1>
-            </header>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los
-                            productos</button>
-                    </li>
-                    <li>
-                        <button id="Abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Abrigos</button>
-                    </li>
-                    <li>
-                        <button id="camisas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Camisetas</button>
-                    </li>
-                    <li>
-                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Pantalones</button>
-                    </li>
-                    <li>
-                        <a class= "boton-menu" "boton-carrito" href="./carrito.html">
-                            <i class="bi bi-cart-fill"></i>carrito<span id="numerito" class="Numerito">0</span></a>
-                    </li>
-                </ul>
-            </nav>
-            <footer>
+    <div class="div-containerAll">
 
-                <p class="texto-footer">©copyright 2023 - derechos reservados</p>
-            </footer>
-        </aside>
+        <header class="navb">
+            <h1 class="logo">YOURStyle</h1>
+
+            <div class="pages-navb">
+                <div class="boton-menu"><a href="index.html"></a>Home</div>
+                <div class="boton-menu"><a href="./productos.html">Productos</div>
+                <div class="boton-menu"><a "boton-carrito" href="./carrito.html">
+                        <div>
+                            <i class="bi bi-cart-fill"></i>Carrito<span id="numerito" class="Numerito">0</span>
+                    </a><small>$22.700</small></div>
+
+            </div>
+        </header>
+        <section>
+            
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/Banner-Inicio-beig.png" class="d-block w-100" alt="Banner-Inicio-beig">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/Banner-inicio-sombreado.png" class="d-block w-100" alt="Banner-inicio-sombreado">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/new ariivals.png" class="d-block w-100" alt="banner-inicio-jean">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
 
         <main>
-            <h2 class="titulo-principal" id="titulo-principal">Todos lo productos</h2>
-            <div id="contenedor-productos" class="contenedor-productos">
-                    <!-- van a aparecer con js -->
+
+
+
+            <h3 class="prodc-destacados">Productos Destacados</h3>
+            <div id="cont-prod-destacados" class="contenedor-productos">
+                <!-- van a aparecer con js -->
 
             </div>
 
-        </main>
+
     </div>
+    <article id="about-us" class="about-us">
+
+        <img src="" alt=""> 
+        <div>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio consectetur sapiente, vitae temporibus nisi fuga, illo deserunt possimus quas animi facere natus quae saepe molestias alias dolor qui optio.</p>
+        </div>
+
+    </article>
+
+    <section>
+        <h2>NUESTRO NEWSLETTER</h2>
+        <p>Inscribite para recibir nuestras ultimas novedades</p>
+        <div class="mini-form">
+            <label for="Nombre"> Nombre </label>
+            <input type="text" placeholder="nombre" name="nombre" />
+            <label for="email">E-mail </label>
+            <input type="email" placeholder="nombre@ejemplo.com" />
+
+            <input type="submit" value="enviar" />
+        <botton class="boton-menu">INSCRIBIRSE</botton>
+        </div>
+    </section>
+
+    </main>
 
 
+    <footer>
+        <section class="foot">
+            <div>
+                <h4 class="uls-foot">NAVEGACION</h4>
+                <ul class="uls-foot">
+                    <li class="boton-menu"><a href="/index.html">Home</a></li>
+                    <li class="boton-menu"><a href="./productos.html">Productos</a></li>
+                    <li class="boton-menu"><a href="./carrito.html">Carrito</a></li>
+                    <li class="boton-menu"><a href="/index.html#about-us">About us</a></li>
+                </ul>
+            </div>
+            <div>
+                <br>
+                <h4>CONTACTANOS</h4>
+                <ul class="uls-foot">
+                    <li class="fotter-ul-li">Telefonia</li>
+                    <li>0080-004-000</li>
+                    <li class="fotter-ul-li">Whatsapp</li>
+                    <li>+54-911-0080-0300</li>
+                    <br>
+                    <hr>
+                    <br>
+                    <li>Email - YOURStyle@gmail.com</li>
+                    <br>
+                    <li>Sitio Web - www.YOURStyle.com</li>
+                </ul>
+            </div>
+
+            <ul class="uls-foot">
+                <strong>NUESTRAS REDES</strong>
+                <li class="fotter-ul-li"><a href="mailto:<EMAIL>">
+                        <EMAIL>
+                    </a></li>
+                <li class="boton-menu"><a href="https://www.instagram.com/">Instagram</a></li>
+                <li class="boton-menu"><a href="https://www.facebook.com/">Facebook</a></li>
+            </ul>
+        </section>
+        <small class="texto-footer">©copyright 2023 - derechos reservados</small>
+    </footer>
+    </div>
     <script src="./js/main.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 
 </html>
